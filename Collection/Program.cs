@@ -72,13 +72,28 @@ namespace Collection
                 Console.WriteLine(obj);
             }
 
-            list1.RemoveAt(1);
+            list1.Remove(50);
+            //list1.RemoveAt(1);
             Console.WriteLine();
             Console.WriteLine("Display the integer list after removing an item");
             for (int i = 0; i < list1.Count; i++)
             {
                 Console.WriteLine(list1[i]);
             }
+
+            Dictionary<int, string> dict1 = new Dictionary<int, string>();
+            dict1.Add(101, "Sophia");
+            dict1.Add(102, "John");
+            dict1.Add(103, "Daphne");
+
+            Console.WriteLine();
+            Console.WriteLine("Display the string dictionary with keys");
+            foreach (var obj in dict1.Keys)
+            {
+                Console.WriteLine(obj + ": " + dict1[obj]);
+            }
+
+
 
             Console.ReadLine();
         }
