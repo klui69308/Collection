@@ -64,6 +64,22 @@ namespace Collection
                 Console.WriteLine(obj);
             }
 
+            list1.Insert(1, 50);
+            Console.WriteLine();
+            Console.WriteLine("Display the integer list after inserting an item");
+            foreach (var obj in list1)
+            {
+                Console.WriteLine(obj);
+            }
+
+            list1.RemoveAt(1);
+            Console.WriteLine();
+            Console.WriteLine("Display the integer list after removing an item");
+            for (int i = 0; i < list1.Count; i++)
+            {
+                Console.WriteLine(list1[i]);
+            }
+
             Console.ReadLine();
         }
     }
