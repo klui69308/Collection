@@ -87,13 +87,19 @@ namespace Collection
             dict1.Add(103, "Daphne");
 
             Console.WriteLine();
-            Console.WriteLine("Display the string dictionary with keys");
+            Console.WriteLine("Display the string dictionary with keys method 1");
+            //method 1
             foreach (var obj in dict1.Keys)
             {
                 Console.WriteLine(obj + ": " + dict1[obj]);
             }
-
-
+            //method 2
+            Console.WriteLine();
+            Console.WriteLine("Display the string dictionary with keys method 2");
+            foreach (var obj in dict1)
+            {
+                Console.WriteLine(obj.Key + ": " + obj.Value);
+            }
 
             Console.ReadLine();
         }
